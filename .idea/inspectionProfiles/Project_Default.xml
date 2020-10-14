@@ -1,0 +1,71 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="3.8" />
+            <item index="1" class="java.lang.String" itemvalue="3.9" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="pkg-resources" />
+            <item index="1" class="java.lang.String" itemvalue="psycopg2-binary" />
+            <item index="2" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="3" class="java.lang.String" itemvalue="h11" />
+            <item index="4" class="java.lang.String" itemvalue="loguru" />
+            <item index="5" class="java.lang.String" itemvalue="vbml" />
+            <item index="6" class="java.lang.String" itemvalue="attrs" />
+            <item index="7" class="java.lang.String" itemvalue="qrcode" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="eReports.secrets" />
+          <option value="django.db.models.fields.CharField.__add__" />
+          <option value="django.db.models.fields.CharField.__getitem__" />
+          <option value="eReports.accounts.models.Role.objects" />
+          <option value="django.db.models.fields.DateField.__sub__" />
+          <option value="eReports.accounts.models.User.id" />
+          <option value="django.db.models.fields.related.ForeignKey.id" />
+          <option value="eReports.accounts.models.Course.objects" />
+          <option value="eReports.reports.models.ReportStatusLog.objects" />
+          <option value="eReports.reports.models.StatusesList.objects" />
+          <option value="eReports.reports.models.FrequentlyUsedAddresses.*" />
+          <option value="eReports.reports.models.FrequentlyUsedReasons.objects" />
+          <option value="eReports.reports.models.accounts" />
+          <option value="eReports.reports.models.Report.id" />
+          <option value="eReports.reports.models.StatusesList.id" />
+          <option value="eReports.reports.models.ReportStatusLog.id" />
+          <option value="eReports.reports.models.Report.*" />
+          <option value="eReports.vkbot.views.accounts" />
+          <option value="eReports.feed.views.reports" />
+          <option value="vkbot.logic.vk" />
+          <option value="django.contrib.auth.models.User.is_needed_role" />
+          <option value="django.contrib.auth.models.User.group" />
+          <option value="django.contrib.auth.models.User.course" />
+          <option value="reports.views.n_report" />
+          <option value="reports.signals.report_changed_by_author" />
+          <option value="reports.signals.old_start_date" />
+          <option value="reports.signals.old_end_date" />
+          <option value="reports.signals.old_reason" />
+          <option value="reports.signals.old_addr" />
+          <option value="reports.signals.report_accept_e_changed" />
+          <option value="reports.signals.report_accept_ct_changed" />
+          <option value="reports.signals.report_accept_hc_changed" />
+          <option value="reports.signals._report_changed_by_author" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

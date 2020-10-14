@@ -1,0 +1,104 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Сергей Саламатов – обо мне">
+        <meta name="author" content="Сергей Саламатов">
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/jquery.pagepiling.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>Сергей В. Саламатов – обо мне</title>
+    </head>
+    <body>
+        <!-- Loader -->
+        <div class="loader">
+            <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+        </div>
+        <!-- Click capture -->
+        <div class="click-capture"></div>
+        <!-- Navbar -->
+        <nav  class="navbar navbar-desctop">
+            <div class="position-relative w-100">
+                <!-- Brand-->
+                <a class="navbar-brand" href="#home">Сергей Саламатов</a>
+                <div class="container d-block">
+                    <span class="phone  my-0 d-none d-md-block"><a href="tel:+79959963535" class="text-decoration-none">+7 (995) 996-3535</a></span>
+                    <span class="email  my-0 d-none d-md-block"><a href="mailto:s@salamatov.org" class="text-decoration-none">s@salamatov.org</a></span>
+                </div>
+                <!-- Toggler -->
+                <button class="toggler">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                </button>
+	        </div>
+	    </nav>
+        <nav class="navbar-bottom">
+{#	  <div class="social">#}
+
+	    <!-- Social -->
+{#	    <ul class="social-icons mr-auto mr-lg-0 d-none d-sm-block">#}
+{#	      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>#}
+{#	      <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>#}
+{#	      <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>#}
+{#	     </ul>#}
+{#	  </div>#}
+          <!-- Copyright -->
+          <div class="copy d-none d-sm-block">© Сергей С. 2020.</div>
+        </nav>
+
+        <!-- Navbar Mobile -->
+        <nav  class="navbar navbar-mobile">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+
+            <!-- language -->
+            <ul class="language">
+                <li class="active"><a href="#">RUS</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+
+            <ul class="navbar-nav navbar-nav-mobile">
+                <li class="active"><a class="nav-link active" data-menuanchor="home" href="#home">Главная</a></li>
+                <li><a class="nav-link" data-menuanchor="about" href="#about">Обо мне</a></li>
+                <li><a class="nav-link" data-menuanchor="experience" href="#experience">Опыт</a></li>
+                <li><a class="nav-link" data-menuanchor="contact" href="#contact">Контакты</a></li>
+            </ul>
+            <div class="navbar-mobile-footer">
+                <p>© Сергей Саламатов. 2020. Все права защищены.</p>
+            </div>
+        </nav>
+        <div id="pagepiling">
+            <!-- Masthead -->
+            {% include 'landings/masthead.html' %}
+            <!-- About -->
+            {% include 'landings/about.html' %}
+            <!-- experience -->
+            {% include 'landings/experience.html' %}
+            <!-- Contact -->
+            {% include 'landings/contact.html' %}
+        </div>
+        <!-- Scrollbar -->
+        <div class="progress-nav">
+            <ul class="navbar-nav">
+                <li data-menuanchor="home" class="active"></li>
+                <li data-menuanchor="about"></li>
+                <li data-menuanchor="experience"></li>
+                <li data-menuanchor="contact"></li>
+            </ul>
+        </div>
+        <!-- Optional JavaScript -->
+        <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}" ></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+        <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.pagepiling.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/interface.js' %}"></script>
+    </body>
+</html>
