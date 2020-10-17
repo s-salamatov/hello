@@ -9,4 +9,5 @@ urlpatterns = [
     path('', landings.index, name='landing'),
     path('cv/', landings.cv, name='cv'),
     path('admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
+              + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
